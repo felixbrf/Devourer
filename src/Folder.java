@@ -1,5 +1,4 @@
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Created by liulongfei on 2016/10/29.
@@ -8,7 +7,6 @@ public class Folder implements Serializable {
 
     private int id;
     private String name;
-    private List<Pin> pins;
 
     public int getId() {
         return id;
@@ -24,13 +22,5 @@ public class Folder implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public List<Pin> getPins() {
-        return pins;
-    }
-
-    public void setPins(List<Pin> pins) {
-        this.pins = pins;
     }
 }
